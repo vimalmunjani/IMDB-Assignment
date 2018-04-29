@@ -1,0 +1,96 @@
+<html>
+
+<head>
+	<title>IMDB</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+	<div class="main-container">
+
+		<div class="nav-section">
+			<span class="logo">IMDB</span>
+			<span class="token-field"><input type="password" id="accessToken" size="20" placeholder="Enter Access Token"></span>
+		</div>
+		<hr>
+
+		<div class="search-section">
+			<div class="radio-wrapper">
+				<label class="radio-container">Title
+<input type="radio" checked="checked" name="radio" value="title"/>
+<span class="checkmark"></span>
+</label>
+				<label class="radio-container">ID
+  <input type="radio" name="radio" value="id">
+  <span class="checkmark"></span>
+</label>
+			</div>
+			<input type="text" id="titleORid" placeholder="Enter Title or ID" />
+			<input type="text" id="year" placeholder="Enter Year" />
+			<input type="button" class="search-button" id="search" value="Search">
+		</div>
+
+		<br>
+		<div id="loading">
+			Loading.....
+		</div>
+
+		<div id="movie-error">
+		</div>
+
+		<div class="movie-card">
+			<div class="movie-poster"></div>
+
+			<div class="movie-details">
+				<p id="movie-title"></p>
+				<p id="movie-year"></p>
+
+				<p id="movie-plot"></p>
+				<p id="movie-genre"></p>
+				<p id="movie-actors"></p>
+				<p id="movie-directors"></p>
+				<p id="movie-writers"></p>
+
+				<p id="movie-languages"></p>
+				<p id="movie-awards"></p>
+				<hr>
+				<heading>Ratings - </heading>
+				<div class="ratings">
+				</div>
+				<hr>
+				<heading>IMDB - </heading><br><br>
+				<div class="imdb">
+					<p id="imdb-rating"></p><br>
+					<p id="imdb-votes"></p><br>
+					<p id="imdb-id"></p><br>
+				</div>
+				<hr>
+
+				<p id="box-office"></p>
+				<p id="prod"></p>
+				<p id="website"></p>
+				<p id="dvd"></p>
+				<p id="type"></p>
+				<p id="rated"></p>
+				<p id="released"></p>
+				<p id="runtime"></p>
+				<p id="country"></p>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="application/javascript" src="myscript.js"></script>
+
+</body>
+
+</html>

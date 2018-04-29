@@ -1,0 +1,263 @@
+:root {
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background: #00c6ff;
+	background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+	background: linear-gradient(to right, #0072ff, #00c6ff);
+	max-width: 100%;
+	width: 100%;
+	margin-top: 2%;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #00c6ff;
+	margin-left: 20px;
+
+
+}
+
+.main-container {
+	background-color: white;
+	width: 90%;
+	margin: auto;
+	margin-top: 50px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 20px;
+}
+
+.nav-section {
+	display: flex;
+	max-width: 100%;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.search-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+input[type="text"] {
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	padding-left: 10px;
+	border: none;
+	color: slategray;
+	font-size: 1.1rem;
+	margin: 10px 0px;
+	width: 50%;
+}
+
+input[type="password"] {
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	border: none;
+	padding: 5px 10px;
+	color: slategray;
+	font-size: 1.1rem;
+	margin-right: 10px;
+}
+
+.search-button {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	border: 0px;
+	background: linear-gradient(to right, #0072ff, #00c6ff);
+	color: white;
+	display: block;
+	width: 150px;
+	padding: 8px 25px;
+	cursor: pointer;
+	font-weight: 500;
+	margin: 5px;
+}
+
+.search-button:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type="text"]:focus {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.token-field {
+	margin-left: auto;
+}
+
+.radio-container {
+	display: inline-block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+}
+
+.radio-container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+
+.radio-container:hover input ~ .checkmark {
+	background-color: #ccc;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.radio-container input:checked ~ .checkmark {
+	background-color: #2196F3;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.radio-container .checkmark:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+#loading {
+
+	font-size: 1.5rem;
+	margin-right: 15px;
+	margin-left: 45%;
+	color: darkgray;
+	display: none;
+}
+
+hr {
+	width: 95%;
+}
+
+#movie-error {
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	padding: 5px;
+	margin: auto;
+	color: darkgray;
+	margin-top: 20px;
+	width: 50%;
+	display: none;
+}
+
+.movie-card {
+
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	padding: 5px;
+	margin-top: 20px;
+	visibility: hidden;
+}
+
+.movie-poster {
+	float: left;
+	margin: 10px;
+	width: inherit;
+}
+
+.movie-card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	color: #37474F;
+}
+
+.movie-details {
+	
+	width: 100%;
+	margin: 10px;
+}
+
+heading {
+
+	font-weight: 700;
+}
+
+p {
+	display: flex;
+
+}
+
+.ratings,
+.imdb,
+.misc {
+	display: flex;
+	justify-content: space-between;
+}
+
+#movie-title {
+	font-size: 2rem;
+}
+
+#movie-rating-1 {
+	margin: 15px;
+}
+
+#movie-plot {
+	font-style: italic;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+
+	input[type="text"] {
+		width: 90%;
+	}
+
+	:root {
+		font-size: 15px;
+	}
+
+	.movie-poster {
+		float: none;
+		margin: auto;
+
+
+	}
+
+	.ratings,
+	.imdb,
+	.misc {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+	}
+
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+	input[type="text"] {}
+}
