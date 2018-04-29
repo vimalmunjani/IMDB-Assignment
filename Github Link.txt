@@ -1,0 +1,15 @@
+
+Github Link - https://github.com/vimalmunjani/IMDB-Assignment
+
+Github Pages Link - https://vimalmunjani.github.io/IMDB-Assignment/
+
+
+When opened in google chrome,there is a script block due to unsafe script.
+Once selected,load unsafe script, it works.
+
+OR 
+
+Run Locally, if hosted on github page does not work.
+
+
+Access Token - 874088ce
