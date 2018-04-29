@@ -84,7 +84,8 @@ let getMovieDetails = () => {
 			console.log(err.responseJSON.error.message);
 			alert(err.responseJSON.error.message)
 
-		}
+		},
+		timeout:5000
 
 	}); // end ajax call 
 }
